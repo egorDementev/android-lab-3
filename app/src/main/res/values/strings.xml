@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">androidLab3</string>
+    <string name="news">News</string>
+    <string name="testtext">testText</string>
+    <string name="write_here">Write here</string>
+    <string name="button_delete_content_description">Delete</string>
+    <string name="read_more"><![CDATA[Read more ->]]></string>
+</resources>

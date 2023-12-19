@@ -2,15 +2,14 @@ package com.example.androidlab3
 
 import android.content.Intent
 import android.net.Uri
-import android.text.Html
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
+import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import android.view.View
-import android.widget.Button
-import android.widget.TextView
 
 
 class NewsAdapter : ListAdapter<News, NewsAdapter.NewsViewHolder>(NewsDiffCallback()) {
@@ -42,7 +41,7 @@ class NewsAdapter : ListAdapter<News, NewsAdapter.NewsViewHolder>(NewsDiffCallba
 
         fun openLinkInBrowser(link: String) {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse(link))
-                itemView.context.startActivity(intent)
+            itemView.context.startActivity(intent)
         }
     }
 
